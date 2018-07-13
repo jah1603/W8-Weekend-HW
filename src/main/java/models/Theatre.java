@@ -1,5 +1,7 @@
 package models;
 
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,11 +16,13 @@ public class Theatre {
     private int capacity;
     private List<Play> performances;
 
-    private Theatre(String name, String city, int capacity){
+    public Theatre(String name, String city, int capacity){
         this.name = name;
         this.city = city;
         this.capacity = capacity;
     }
+
+    public Theatre(){}
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -58,7 +62,11 @@ public class Theatre {
         this.capacity = capacity;
     }
 
-    @OneToMany(mappedBy = "theatre", fetch = FetchType.LAZY)
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @ManyToMany
+    @JoinTable(name = "pirate_raid",
+            joinColumns = {@JoinColumn(name = "theatre_id", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "play_id", nullable = false, updatable = false)})
     public List<Play> getPerformances() {
         return performances;
     }

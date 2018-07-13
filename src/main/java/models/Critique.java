@@ -19,6 +19,8 @@ public class Critique {
         this.play = play;
     }
 
+    public Critique(){}
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
