@@ -20,6 +20,7 @@
         <mapping class = "models.Character"/>
         <mapping class = "models.Critique"/>
         <mapping class = "models.Actor"/>
+        <mapping class = "models.Ticket"/>
 
     </session-factory>
 </hibernate-configuration>

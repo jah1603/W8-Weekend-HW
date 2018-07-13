@@ -13,15 +13,17 @@ public class Play {
     private int id;
     private String title;
     private int yearOfFirstPerformance;
+    private double theatreStagingCost;
     private Playwright playwright;
     private List<Theatre> venues;
     private List<Critique> critiques;
     private List<Character> characters;
     private List<Actor> actors;
 
-    public Play(String title, int yearOfFirstPerformance, Playwright playwright){
+    public Play(String title, int yearOfFirstPerformance, double theatreStagingCost, Playwright playwright){
         this.title = title;
         this.yearOfFirstPerformance = yearOfFirstPerformance;
+        this.theatreStagingCost = theatreStagingCost;
         this.playwright = playwright;
         this.critiques = new ArrayList<Critique>();
         this.venues = new ArrayList<Theatre>();
@@ -86,6 +88,15 @@ public class Play {
 
     public void setYearOfFirstPerformance(int yearOfFirstPerformance) {
         this.yearOfFirstPerformance = yearOfFirstPerformance;
+    }
+
+    @Column(name = "theatre_staging_cost")
+    public double getTheatreStagingCost(){
+        return theatreStagingCost;
+    }
+
+    public void setTheatreStagingCost(double theatreStagingCost){
+        this.theatreStagingCost = theatreStagingCost;
     }
 
     @ManyToOne(fetch = FetchType.LAZY)
