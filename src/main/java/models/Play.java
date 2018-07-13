@@ -19,6 +19,7 @@ public class Play {
     private List<Critique> critiques;
     private List<Character> characters;
     private List<Actor> actors;
+    private List<Ticket> tickets;
 
     public Play(String title, int yearOfFirstPerformance, double theatreStagingCost, Playwright playwright){
         this.title = title;
@@ -29,6 +30,7 @@ public class Play {
         this.venues = new ArrayList<Theatre>();
         this.characters = new ArrayList<Character>();
         this.actors = new ArrayList<Actor>();
+        this.tickets = new ArrayList<Ticket>();
     }
 
     public Play(){}
@@ -58,6 +60,15 @@ public class Play {
 
     public void setCritique(List<Critique> critique) {
         this.critiques = critique;
+    }
+
+    @OneToMany(mappedBy = "play", fetch = FetchType.LAZY)
+    public List<Ticket> getTickets() {
+        return tickets;
+    }
+
+    public void setTickets(List<Ticket> tickets) {
+        this.tickets = tickets;
     }
 
     @Id
@@ -124,5 +135,9 @@ public class Play {
 
     public void addVenueToPlayVenues(Theatre venue){
         this.venues.add(venue);
+    }
+
+    public double getBreakevenTicketPrice(Theatre theatre){
+        return this.theatreStagingCost / theatre.getCapacity();
     }
 }

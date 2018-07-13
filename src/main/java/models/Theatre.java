@@ -15,12 +15,14 @@ public class Theatre {
     private String city;
     private int capacity;
     private List<Play> performances;
+    private List<Ticket> tickets;
 
     public Theatre(String name, String city, int capacity){
         this.name = name;
         this.city = city;
         this.capacity = capacity;
         this.performances = new ArrayList<Play>();
+        this.tickets = new ArrayList<Ticket>();
     }
 
     public Theatre(){}
@@ -70,6 +72,15 @@ public class Theatre {
             inverseJoinColumns = {@JoinColumn(name = "play_id", nullable = false, updatable = false)})
     public List<Play> getPerformances() {
         return performances;
+    }
+
+    @OneToMany(mappedBy = "theatre", fetch = FetchType.LAZY)
+    public List<Ticket> getTickets() {
+        return tickets;
+    }
+
+    public void setTickets(List<Ticket> tickets){
+        this.tickets = tickets;
     }
 
     public void setPerformances(List<Play> performances) {

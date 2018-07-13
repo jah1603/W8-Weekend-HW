@@ -42,10 +42,14 @@ public class Runner {
             Actor actor2 = new Actor("Kate Winslett", play1, character2);
             DBHelper.save(actor2);
 
+
             DBPlay.addPlayToTheatre(play1, theatre1);
             DBHelper.update(theatre1);
             DBPlay.addPlayToTheatre(play2, theatre1);
             DBHelper.update(theatre1);
+
+            Ticket ticket1 = new Ticket(11.50, theatre1, play1);
+            Ticket ticket2 = new Ticket(11.20, theatre1, play2);
 
             List<Play> plays = DBTheatre.getTheatrePlays(theatre1);
 
