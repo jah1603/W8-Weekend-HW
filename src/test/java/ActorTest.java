@@ -37,3 +37,4 @@ public class ActorTest {
         assertEquals(character1, actor1.getCharacter());
     }
 }
+
