@@ -17,10 +17,11 @@ public class DBTheatre {
     private static Session session;
     private static Transaction transaction;
 
-    public static void sellTicket(Ticket ticket, Theatre theatre){
+    public static void sellTicket(Ticket ticket, Theatre theatre, Play play){
         theatre.printTicket(ticket);
         theatre.addTicketToSoldTickets(ticket);
         theatre.cashTransferredUponSale(ticket);
+        theatre.profitIncrementedUponSale(ticket);
     }
 
 

@@ -137,7 +137,7 @@ public class Play {
         this.venues.add(venue);
     }
 
-    public double getBreakevenTicketPrice(Theatre theatre){
+    public double getBreakevenTicketPriceAssumingFullCapacity(Theatre theatre){
         return this.theatreStagingCost / theatre.getCapacity();
     }
 

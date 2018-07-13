@@ -17,8 +17,11 @@ public class Runner {
             Playwright playwright2 = new Playwright("Molière", "French");
             DBHelper.save(playwright2);
 
-            Theatre theatre1 = new Theatre("Palais Garnier", "Paris", 1900, 0);
+            Theatre theatre1 = new Theatre("Palais Garnier", "Paris", 1900, 0, 0);
             DBHelper.save(theatre1);
+
+            Theatre theatre2 = new Theatre("The Old Vic", "Bristol", 1000, 0,0);
+            DBHelper.save(theatre2);
 
             Play play1 = new Play("Romeo and Juliet", 1754, 55000, playwright1);
             DBHelper.save(play1);
@@ -53,9 +56,9 @@ public class Runner {
             Ticket ticket2 = new Ticket(11.20, theatre1, play2);
             DBHelper.save(ticket2);
 
-            DBTheatre.sellTicket(ticket1, theatre1);
+            DBTheatre.sellTicket(ticket1, theatre1, ticket1.getPlay());
             DBHelper.update(theatre1);
-            DBTheatre.sellTicket(ticket2, theatre1);
+            DBTheatre.sellTicket(ticket2, theatre1, ticket2.getPlay());
             DBHelper.update(theatre1);
 
             List<Play> plays = DBTheatre.getTheatrePlays(theatre1);

@@ -60,6 +60,6 @@ public class Ticket {
     }
 
     public double getProfitPerTicketSold(Play play, Theatre theatre){
-        return this.getSalePrice() - play.getBreakevenTicketPrice(theatre);
+        return this.getSalePrice() - play.getBreakevenTicketPriceAssumingFullCapacity(theatre);
     }
 }

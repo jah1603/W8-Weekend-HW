@@ -21,6 +21,7 @@ public class DBPlay {
     public static void addPlayToTheatre(Play play, Theatre theatre){
         play.addVenueToPlayVenues(theatre);
         theatre.addPlayToPerformanceList(play);
+        theatre.calculateStagingExpenditureForPlay(play);
         DBHelper.update(play);
     }
 

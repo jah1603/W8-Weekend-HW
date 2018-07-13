@@ -15,21 +15,24 @@ public class Theatre {
     private String city;
     private int capacity;
     private double income;
+    private double profit;
     private List<Play> performances;
     private List<Ticket> ticketsPrinted;
     private List<Ticket> ticketsSold;
 
-    public Theatre(String name, String city, int capacity, double income){
+    public Theatre(String name, String city, int capacity, double income, double profit) {
         this.name = name;
         this.city = city;
         this.capacity = capacity;
         this.income = income;
+        this.profit = profit;
         this.performances = new ArrayList<Play>();
         this.ticketsPrinted = new ArrayList<Ticket>();
         this.ticketsSold = new ArrayList<Ticket>();
     }
 
-    public Theatre(){}
+    public Theatre() {
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -78,6 +81,15 @@ public class Theatre {
         this.income = income;
     }
 
+    @Column(name = "profit")
+    public double getProfit() {
+        return profit;
+    }
+
+    public void setProfit(double profit) {
+        this.profit = profit;
+    }
+
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @ManyToMany
     @JoinTable(name = "theatre_play",
@@ -92,7 +104,7 @@ public class Theatre {
         return ticketsPrinted;
     }
 
-    public void setTicketsPrinted(List<Ticket> tickets){
+    public void setTicketsPrinted(List<Ticket> tickets) {
         this.ticketsPrinted = tickets;
     }
 
@@ -100,20 +112,34 @@ public class Theatre {
         this.performances = performances;
     }
 
-    public void addPlayToPerformanceList(Play play){
+    public void addPlayToPerformanceList(Play play) {
         this.performances.add(play);
     }
 
-    public void printTicket(Ticket ticket){
+    public void printTicket(Ticket ticket) {
         this.ticketsPrinted.add(ticket);
     }
 
-    public void addTicketToSoldTickets(Ticket ticket){
+    public void addTicketToSoldTickets(Ticket ticket) {
         this.ticketsPrinted.remove(ticket);
         this.ticketsSold.add(ticket);
     }
 
-    public void cashTransferredUponSale(Ticket ticket){
+    public void cashTransferredUponSale(Ticket ticket) {
         this.income = income + ticket.getSalePrice();
     }
+
+    public void profitIncrementedUponSale(Ticket ticket) {
+        this.profit = profit + ticket.getSalePrice();
+    }
+
+    public int countTicketSales() {
+        return this.ticketsSold.size();
+    }
+
+    public double calculateStagingExpenditureForPlay(Play play) {
+        return profit -= play.getTheatreStagingCost();
+    }
+
 }
+
