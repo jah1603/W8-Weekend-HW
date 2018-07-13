@@ -64,7 +64,7 @@ public class Theatre {
 
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @ManyToMany
-    @JoinTable(name = "pirate_raid",
+    @JoinTable(name = "theatre_play",
             joinColumns = {@JoinColumn(name = "theatre_id", nullable = false, updatable = false)},
             inverseJoinColumns = {@JoinColumn(name = "play_id", nullable = false, updatable = false)})
     public List<Play> getPerformances() {

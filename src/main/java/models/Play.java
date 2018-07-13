@@ -15,24 +15,25 @@ public class Play {
     private int yearOfFirstPerformance;
     private Playwright playwright;
     private List<Theatre> venues;
-    private Critique critique;
+    private List<Critique> critiques;
 
     public Play(String title, int yearOfFirstPerformance, Playwright playwright){
         this.title = title;
         this.yearOfFirstPerformance = yearOfFirstPerformance;
         this.playwright = playwright;
         this.venues = new ArrayList<Theatre>();
+        this.critiques = new ArrayList<Critique>();
     }
 
     public Play(){}
 
     @OneToMany(mappedBy = "play", fetch = FetchType.LAZY)
-    public Critique getCritique() {
-        return critique;
+    public List<Critique> getCritique() {
+        return critiques;
     }
 
-    public void setCritique(Critique critique) {
-        this.critique = critique;
+    public void setCritique(List<Critique> critique) {
+        this.critiques = critique;
     }
 
     @Id
@@ -77,7 +78,7 @@ public class Play {
 
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @ManyToMany
-    @JoinTable(name = "pirate_raid",
+    @JoinTable(name = "theatre_play",
             joinColumns = {@JoinColumn(name = "play_id", nullable = false, updatable = false)},
             inverseJoinColumns = {@JoinColumn(name = "theatre_id", nullable = false, updatable = false)})
     public List<Theatre> getVenue() {
