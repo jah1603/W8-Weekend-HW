@@ -17,7 +17,7 @@ public class Theatre {
     private double income;
     private double profit;
     private List<Play> performances;
-    private List<Ticket> ticketsPrinted;
+    private List<Ticket> ticketsPrintedAndUnsold;
     private List<Ticket> ticketsSold;
 
     public Theatre(String name, String city, int capacity, double income, double profit) {
@@ -27,7 +27,7 @@ public class Theatre {
         this.income = income;
         this.profit = profit;
         this.performances = new ArrayList<Play>();
-        this.ticketsPrinted = new ArrayList<Ticket>();
+        this.ticketsPrintedAndUnsold = new ArrayList<Ticket>();
         this.ticketsSold = new ArrayList<Ticket>();
     }
 
@@ -101,11 +101,11 @@ public class Theatre {
 
     @OneToMany(mappedBy = "theatre", fetch = FetchType.LAZY)
     public List<Ticket> getTicketsPrinted() {
-        return ticketsPrinted;
+        return ticketsPrintedAndUnsold;
     }
 
     public void setTicketsPrinted(List<Ticket> tickets) {
-        this.ticketsPrinted = tickets;
+        this.ticketsPrintedAndUnsold = tickets;
     }
 
     public void setPerformances(List<Play> performances) {
@@ -117,11 +117,11 @@ public class Theatre {
     }
 
     public void printTicket(Ticket ticket) {
-        this.ticketsPrinted.add(ticket);
+        this.ticketsPrintedAndUnsold.add(ticket);
     }
 
     public void addTicketToSoldTickets(Ticket ticket) {
-        this.ticketsPrinted.remove(ticket);
+        this.ticketsPrintedAndUnsold.remove(ticket);
         this.ticketsSold.add(ticket);
     }
 
@@ -135,6 +135,21 @@ public class Theatre {
 
     public int countTicketSales() {
         return this.ticketsSold.size();
+    }
+
+    public int countTicketPrintedAndUnsold() {
+        return this.ticketsPrintedAndUnsold.size();
+    }
+
+    public int countPlays() {
+        return this.performances.size();
+    }
+
+    public void printTicketsUpToCapacity(Ticket ticket, int number){
+        for (int numticks = 1; numticks <= number; numticks++)
+        {
+           this.ticketsPrintedAndUnsold.add(ticket);
+        }
     }
 
     public double calculateStagingExpenditureForPlay(Play play) {

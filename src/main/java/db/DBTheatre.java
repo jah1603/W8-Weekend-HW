@@ -24,6 +24,23 @@ public class DBTheatre {
         theatre.profitIncrementedUponSale(ticket);
     }
 
+    public static void sellMultipleTickets(Ticket ticket, Theatre theatre, Play play, int num){
+        theatre.printTicketsUpToCapacity(ticket, num);
+        for (int numticks = 1; numticks <= num; numticks++)
+        {
+            theatre.addTicketToSoldTickets(ticket);
+            theatre.cashTransferredUponSale(ticket);
+            theatre.profitIncrementedUponSale(ticket);
+        }
+    }
+
+    public static void sellTicket(Ticket ticket, Theatre theatre, Play play, int num){
+        theatre.printTicketsUpToCapacity(ticket, num);
+        theatre.addTicketToSoldTickets(ticket);
+        theatre.cashTransferredUponSale(ticket);
+        theatre.profitIncrementedUponSale(ticket);
+    }
+
 
     public static List<Play> getTheatrePlays(Theatre theatre){
         List<Play> results = null;

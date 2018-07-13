@@ -49,4 +49,38 @@ public class TheatreTest {
         assertEquals(0, theatre1.getProfit(), 0.5);
     }
 
+    @Test
+    public void canPrintTicket(){
+        theatre1.addPlayToPerformanceList(play1);
+        theatre1.printTicket(ticket1);
+        assertEquals(1, theatre1.countTicketPrintedAndUnsold());
+    }
+
+    @Test
+    public void canPrintTicketsToFullCapacity(){
+        theatre1.addPlayToPerformanceList(play1);
+        theatre1.printTicketsUpToCapacity(ticket1, 1900);
+        assertEquals(1900, theatre1.countTicketPrintedAndUnsold());
+    }
+
+    @Test public void sellOutPerformancePossible(){
+        theatre1.addPlayToPerformanceList(play1);
+        theatre1.printTicketsUpToCapacity(ticket1, 1900);
+    }
+
+    @Test
+    public void sellTicket(){
+        theatre1.addPlayToPerformanceList(play1);
+        theatre1.calculateStagingExpenditureForPlay(play1);
+        theatre1.printTicket(ticket1);
+        theatre1.addTicketToSoldTickets(ticket1);
+        theatre1.cashTransferredUponSale(ticket1);
+        theatre1.profitIncrementedUponSale(ticket1);
+        assertEquals(11.5, theatre1.getIncome(), 0.5);
+        assertEquals(0, theatre1.countTicketPrintedAndUnsold());
+        assertEquals(1, theatre1.countPlays());
+        assertEquals(1, theatre1.countTicketSales());
+        assertEquals(-54989, theatre1.getProfit(), 0.5);
+    }
+
 }
