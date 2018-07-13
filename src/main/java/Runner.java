@@ -61,9 +61,9 @@ public class Runner {
             DBTheatre.sellTicket(ticket2, theatre1, ticket2.getPlay());
             DBHelper.update(theatre1);
 
-            List<Play> plays = DBTheatre.getTheatrePlays(theatre1);
+            List<Play> playsShownAtTheatre1 = DBTheatre.getTheatrePlays(theatre1);
 
-            List<Theatre> venuesForPlay1 = DBPlay.getPlayVenues(play1);
+            List<Theatre> venuesShowingPlay1 = DBPlay.getPlayVenues(play1);
 
 
         }
