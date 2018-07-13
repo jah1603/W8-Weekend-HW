@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68f598e9-8b3d-48e1-ad20-8217e20fbc55" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Play.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Playwright.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Playwright.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PlayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PlaywrightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlaywrightTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Play.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Play.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Playwright.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Playwright.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PlayTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PlayTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PlaywrightTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PlaywrightTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TicketTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,29 +96,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PlayTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1783#1784#0" expanded="true" />
-                <element signature="e#1838#1839#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Play.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Play.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
+            <state relative-caret-position="302">
               <caret line="143" lean-forward="true" selection-start-line="143" selection-end-line="143" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3696#3697#0" expanded="true" />
                 <element signature="e#3734#3735#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TicketTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TicketTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#622#623#0" expanded="true" />
+                <element signature="e#643#644#0" expanded="true" />
+                <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#881#882#0" expanded="true" />
+                <element signature="e#911#912#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -169,6 +164,7 @@
         <option value="$PROJECT_DIR$/src/main/java/models/Playwright.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Play.java" />
         <option value="$PROJECT_DIR$/src/test/java/PlayTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TicketTest.java" />
       </list>
     </option>
   </component>
@@ -275,12 +271,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PlayTest">
-    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Runner" />
-      <module name="PlaysWeekendHomework" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TicketTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -352,6 +343,23 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="TicketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PlaysWeekendHomework" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TicketTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -391,19 +399,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.Runner" />
       <item itemvalue="JUnit.TheatreTest.sellOutPerformancePossible" />
       <item itemvalue="JUnit.PlaywrightTest" />
       <item itemvalue="JUnit.PlayTest.hasCritiques" />
       <item itemvalue="JUnit.PlayTest" />
+      <item itemvalue="JUnit.TicketTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TicketTest" />
         <item itemvalue="JUnit.PlayTest" />
         <item itemvalue="JUnit.PlaywrightTest" />
         <item itemvalue="JUnit.PlayTest.hasCritiques" />
         <item itemvalue="JUnit.TheatreTest.sellOutPerformancePossible" />
-        <item itemvalue="Application.Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -421,15 +429,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PlaywrightTest - 2018.07.13 at 20h 20m 21s.xml">
-      <configuration name="PlaywrightTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PlayTest_hasCritiques - 2018.07.13 at 20h 21m 45s.xml">
-      <configuration name="PlayTest.hasCritiques" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PlaywrightTest - 2018.07.13 at 20h 22m 30s.xml">
-      <configuration name="PlaywrightTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PlaywrightTest - 2018.07.13 at 20h 23m 17s.xml">
       <configuration name="PlaywrightTest" configurationId="JUnit" />
     </history-entry>
@@ -451,6 +450,15 @@
     <history-entry file="PlayTest - 2018.07.13 at 20h 27m 45s.xml">
       <configuration name="PlayTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PlayTest - 2018.07.13 at 20h 30m 28s.xml">
+      <configuration name="PlayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PlayTest - 2018.07.13 at 20h 34m 17s.xml">
+      <configuration name="PlayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TicketTest - 2018.07.13 at 20h 34m 24s.xml">
+      <configuration name="TicketTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="716" extended-state="0" />
@@ -469,7 +477,7 @@
       <window_info anchor="bottom" id="Terminal" weight="0.32956383" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -597,17 +605,6 @@
           <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Ticket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -752,7 +749,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Play.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
+        <state relative-caret-position="302">
           <caret line="143" lean-forward="true" selection-start-line="143" selection-end-line="143" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -764,12 +761,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PlayTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="20" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1783#1784#0" expanded="true" />
-            <element signature="e#1838#1839#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Ticket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-43">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TicketTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
           </folding>
         </state>
       </provider>
