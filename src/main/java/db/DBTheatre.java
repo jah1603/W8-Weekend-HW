@@ -47,7 +47,7 @@ public class DBTheatre {
         session = HibernateUtil.getSessionFactory().openSession();
         try {
             Criteria cr = session.createCriteria(Play.class);
-            cr.createAlias("theatres", "theatre"); // ADDED
+            cr.createAlias("venues", "theatre"); // ADDED
             cr.add(Restrictions.eq("theatre.id", theatre.getId())); // ADDED
             results = cr.list();
         } catch (HibernateException ex){

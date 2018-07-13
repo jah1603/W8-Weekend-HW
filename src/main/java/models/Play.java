@@ -126,11 +126,11 @@ public class Play {
     @JoinTable(name = "theatre_play",
             joinColumns = {@JoinColumn(name = "play_id", nullable = false, updatable = false)},
             inverseJoinColumns = {@JoinColumn(name = "theatre_id", nullable = false, updatable = false)})
-    public List<Theatre> getVenue() {
+    public List<Theatre> getVenues() {
         return venues;
     }
 
-    public void setVenue(List<Theatre> venues) {
+    public void setVenues(List<Theatre> venues) {
         this.venues = venues;
     }
 
