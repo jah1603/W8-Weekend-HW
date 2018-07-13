@@ -14,15 +14,19 @@ public class Theatre {
     private String name;
     private String city;
     private int capacity;
+    private double income;
     private List<Play> performances;
-    private List<Ticket> tickets;
+    private List<Ticket> ticketsPrinted;
+    private List<Ticket> ticketsSold;
 
-    public Theatre(String name, String city, int capacity){
+    public Theatre(String name, String city, int capacity, double income){
         this.name = name;
         this.city = city;
         this.capacity = capacity;
+        this.income = income;
         this.performances = new ArrayList<Play>();
-        this.tickets = new ArrayList<Ticket>();
+        this.ticketsPrinted = new ArrayList<Ticket>();
+        this.ticketsSold = new ArrayList<Ticket>();
     }
 
     public Theatre(){}
@@ -65,6 +69,15 @@ public class Theatre {
         this.capacity = capacity;
     }
 
+    @Column(name = "income")
+    public double getIncome() {
+        return income;
+    }
+
+    public void setIncome(double income) {
+        this.income = income;
+    }
+
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @ManyToMany
     @JoinTable(name = "theatre_play",
@@ -75,12 +88,12 @@ public class Theatre {
     }
 
     @OneToMany(mappedBy = "theatre", fetch = FetchType.LAZY)
-    public List<Ticket> getTickets() {
-        return tickets;
+    public List<Ticket> getTicketsPrinted() {
+        return ticketsPrinted;
     }
 
-    public void setTickets(List<Ticket> tickets){
-        this.tickets = tickets;
+    public void setTicketsPrinted(List<Ticket> tickets){
+        this.ticketsPrinted = tickets;
     }
 
     public void setPerformances(List<Play> performances) {
@@ -89,5 +102,18 @@ public class Theatre {
 
     public void addPlayToPerformanceList(Play play){
         this.performances.add(play);
+    }
+
+    public void printTicket(Ticket ticket){
+        this.ticketsPrinted.add(ticket);
+    }
+
+    public void addTicketToSoldTickets(Ticket ticket){
+        this.ticketsPrinted.remove(ticket);
+        this.ticketsSold.add(ticket);
+    }
+
+    public void cashTransferredUponSale(Ticket ticket){
+        this.income = income + ticket.getSalePrice();
     }
 }

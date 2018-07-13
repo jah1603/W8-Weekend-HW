@@ -2,10 +2,12 @@ package db;
 
 import models.Play;
 import models.Theatre;
+import models.Ticket;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 
 import java.util.List;
@@ -13,6 +15,13 @@ import java.util.List;
 public class DBTheatre {
 
     private static Session session;
+    private static Transaction transaction;
+
+    public static void sellTicket(Ticket ticket, Theatre theatre){
+        theatre.printTicket(ticket);
+        theatre.addTicketToSoldTickets(ticket);
+        theatre.cashTransferredUponSale(ticket);
+    }
 
 
     public static List<Play> getTheatrePlays(Theatre theatre){
@@ -29,6 +38,7 @@ public class DBTheatre {
             session.close();
         }
         return results;
-
     }
+
+
 }

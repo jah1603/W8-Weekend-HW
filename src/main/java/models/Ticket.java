@@ -58,4 +58,8 @@ public class Ticket {
     public void setPlay(Play play) {
         this.play = play;
     }
+
+    public double getProfitPerTicketSold(Play play, Theatre theatre){
+        return this.getSalePrice() - play.getBreakevenTicketPrice(theatre);
+    }
 }
