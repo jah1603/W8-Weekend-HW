@@ -22,6 +22,7 @@ public class Play {
     private List<Ticket> tickets;
 
     public Play(String title, int yearOfFirstPerformance, double theatreStagingCost, Playwright playwright){
+
         this.title = title;
         this.yearOfFirstPerformance = yearOfFirstPerformance;
         this.theatreStagingCost = theatreStagingCost;
@@ -139,6 +140,26 @@ public class Play {
 
     public double getBreakevenTicketPriceAssumingFullCapacity(Theatre theatre){
         return this.theatreStagingCost / theatre.getCapacity();
+    }
+
+    public int countTickets(){
+        return this.tickets.size();
+    }
+
+    public int countCharacters(){
+        return this.characters.size();
+    }
+
+    public int countTheatres(){
+        return this.venues.size();
+    }
+
+    public int countActors(){
+        return this.actors.size();
+    }
+
+    public int countCritiques(){
+        return this.critiques.size();
     }
 
 }

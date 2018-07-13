@@ -1,6 +1,7 @@
 package models;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -15,6 +16,7 @@ public class Playwright {
     public Playwright(String name, String nationality){
         this.name = name;
         this.nationality = nationality;
+        this.œuvre = new ArrayList<Play>();
     }
 
     public Playwright(){}
@@ -55,5 +57,9 @@ public class Playwright {
 
     public void setŒuvre(List<Play> œuvre) {
         this.œuvre = œuvre;
+    }
+
+    public int countWorks(){
+        return this.œuvre.size();
     }
 }
