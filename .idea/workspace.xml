@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68f598e9-8b3d-48e1-ad20-8217e20fbc55" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/CharacterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CharacterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ActorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,8 +85,8 @@
       <file leaf-file-name="CritiqueTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CritiqueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="49">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#773#774#0" expanded="true" />
@@ -100,11 +100,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ActorTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ActorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#621#622#0" expanded="true" />
+                <element signature="e#642#643#0" expanded="true" />
+                <element signature="e#778#779#0" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
+                <element signature="e#885#886#0" expanded="true" />
+                <element signature="e#915#916#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CharacterTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CharacterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="135">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="21" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,11 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="37" column="11" lean-forward="true" selection-start-line="37" selection-start-column="11" selection-end-line="38" selection-end-column="38" />
+            <state relative-caret-position="99">
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,6 +175,7 @@
         <option value="$PROJECT_DIR$/src/main/java/Runner.java" />
         <option value="$PROJECT_DIR$/src/test/java/CritiqueTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/CharacterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ActorTest.java" />
       </list>
     </option>
   </component>
@@ -263,14 +282,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CharacterTest">
-    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Runner" />
-      <module name="PlaysWeekendHomework" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ActorTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="ActorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PlaysWeekendHomework" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ActorTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="CharacterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PlaysWeekendHomework" />
@@ -379,19 +410,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.Runner" />
       <item itemvalue="JUnit.CritiqueTest" />
       <item itemvalue="JUnit.CritiqueTest.hasSummary" />
       <item itemvalue="JUnit.CritiqueTest.hasStarRating" />
       <item itemvalue="JUnit.CharacterTest" />
+      <item itemvalue="JUnit.ActorTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ActorTest" />
         <item itemvalue="JUnit.CharacterTest" />
         <item itemvalue="JUnit.CritiqueTest" />
         <item itemvalue="JUnit.CritiqueTest.hasStarRating" />
         <item itemvalue="JUnit.CritiqueTest.hasSummary" />
-        <item itemvalue="Application.Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -432,6 +463,9 @@
     </history-entry>
     <history-entry file="CritiqueTest - 2018.07.13 at 18h 45m 05s.xml">
       <configuration name="CritiqueTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CharacterTest - 2018.07.13 at 18h 50m 06s.xml">
+      <configuration name="CharacterTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -701,17 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Actor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Critique.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -719,10 +742,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Actor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CritiqueTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="49">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#773#774#0" expanded="true" />
@@ -737,20 +777,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CharacterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="135">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="21" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ActorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="37" column="11" lean-forward="true" selection-start-line="37" selection-start-column="11" selection-end-line="38" selection-end-column="38" />
+        <state relative-caret-position="510">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
           </folding>
         </state>
       </provider>
