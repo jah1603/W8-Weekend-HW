@@ -21,7 +21,7 @@ public class TheatreTest {
         play1 = new Play("Romeo and Juliet", 1754, 55000, playwright1);
         character1 = new Character("Romeo Montague", play1);
         theatre1 = new Theatre("Palais Garnier", "Paris", 1900, 0, 0);
-        ticket1 = new Ticket(11.50, theatre1, play1);
+        ticket1 = new Ticket(52.50, theatre1, play1);
     }
 
     @Test
@@ -57,16 +57,26 @@ public class TheatreTest {
     }
 
     @Test
-    public void canPrintTicketsToFullCapacity(){
+    public void canPrintTicketsUpToFullCapacity(){
         theatre1.addPlayToPerformanceList(play1);
         theatre1.printTicketsUpToCapacity(ticket1, 1900);
         assertEquals(1900, theatre1.countTicketPrintedAndUnsold());
     }
 
-    @Test public void sellOutPerformancePossible(){
+    @Test
+    public void sellOutPerformancePossible(){
         theatre1.addPlayToPerformanceList(play1);
+        theatre1.calculateStagingExpenditureForPlay(play1);
         theatre1.printTicketsUpToCapacity(ticket1, 1900);
+        for (int numticks = 1; numticks <= 1900; numticks++)
+        {
+            theatre1.addTicketToSoldTickets(ticket1);
+            theatre1.cashTransferredUponSale(ticket1);
+            theatre1.profitIncrementedUponSale(ticket1);
+        }
+        assertEquals(44750, theatre1.getProfit(), 1);
     }
+
 
     @Test
     public void sellTicket(){

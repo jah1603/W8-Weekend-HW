@@ -53,16 +53,16 @@ public class Runner {
             DBPlay.addPlayToTheatre(play1, theatre2);
             DBHelper.update(theatre2);
 
-            Ticket ticket1 = new Ticket(20.50, theatre1, play1);
+            Ticket ticket1 = new Ticket(52.50, theatre1, play1);
             DBHelper.save(ticket1);
             Ticket ticket2 = new Ticket(11.20, theatre1, play2);
             DBHelper.save(ticket2);
             Ticket ticket3 = new Ticket(25.45, theatre2, play1);
             DBHelper.save(ticket3);
 
-            DBTheatre.sellTicket(ticket1, theatre1, ticket1.getPlay(), theatre1.getCapacity());
+            DBTheatre.sellTicket(ticket1, theatre1, ticket1.getPlay(), 1);
             DBHelper.update(theatre1);
-            DBTheatre.sellTicket(ticket2, theatre1, ticket2.getPlay(), theatre1.getCapacity());
+            DBTheatre.sellTicket(ticket2, theatre1, ticket2.getPlay(), 1);
             DBHelper.update(theatre1);
 
 

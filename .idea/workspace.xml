@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="68f598e9-8b3d-48e1-ad20-8217e20fbc55" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DBTheatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DBTheatre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Theatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Theatre.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TheatreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TheatreTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +18,8 @@
       <file leaf-file-name="Theatre.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Theatre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="148" column="8" selection-start-line="148" selection-start-column="8" selection-end-line="151" selection-end-column="9" />
+            <state relative-caret-position="175">
+              <caret line="156" column="5" lean-forward="true" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#485#486#0" expanded="true" />
@@ -78,8 +76,8 @@
       <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="200">
+              <caret line="68" column="72" selection-start-line="68" selection-start-column="72" selection-end-line="68" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,8 +88,8 @@
       <file leaf-file-name="DBTheatre.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/db/DBTheatre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="170">
+              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,8 +100,8 @@
       <file leaf-file-name="TheatreTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TheatreTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
-              <caret line="59" column="17" lean-forward="true" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+            <state relative-caret-position="-327">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,8 +141,8 @@
         <option value="$PROJECT_DIR$/src/test/java/ActorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/CharacterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Theatre.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TheatreTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/DBTheatre.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TheatreTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Runner.java" />
       </list>
     </option>
@@ -252,7 +250,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Runner">
+  <component name="RunManager" selected="JUnit.TheatreTest.sellOutPerformancePossible">
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Runner" />
       <module name="PlaysWeekendHomework" />
@@ -295,12 +293,12 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="CritiqueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TheatreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PlaysWeekendHomework" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CritiqueTest" />
+      <option name="MAIN_CLASS_NAME" value="TheatreTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -312,14 +310,14 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TheatreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TheatreTest.sellOutPerformancePossible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PlaysWeekendHomework" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TheatreTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="sellOutPerformancePossible" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -368,19 +366,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.CritiqueTest" />
       <item itemvalue="JUnit.CharacterTest" />
       <item itemvalue="JUnit.ActorTest" />
       <item itemvalue="JUnit.TheatreTest" />
       <item itemvalue="Application.Runner" />
+      <item itemvalue="JUnit.TheatreTest.sellOutPerformancePossible" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TheatreTest.sellOutPerformancePossible" />
         <item itemvalue="Application.Runner" />
         <item itemvalue="JUnit.TheatreTest" />
         <item itemvalue="JUnit.ActorTest" />
         <item itemvalue="JUnit.CharacterTest" />
-        <item itemvalue="JUnit.CritiqueTest" />
       </list>
     </recent_temporary>
   </component>
@@ -398,12 +396,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TheatreTest - 2018.07.13 at 19h 14m 47s.xml">
-      <configuration name="TheatreTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TheatreTest - 2018.07.13 at 19h 15m 00s.xml">
-      <configuration name="TheatreTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TheatreTest - 2018.07.13 at 19h 19m 53s.xml">
       <configuration name="TheatreTest" configurationId="JUnit" />
     </history-entry>
@@ -428,6 +420,12 @@
     <history-entry file="TheatreTest - 2018.07.13 at 19h 37m 09s.xml">
       <configuration name="TheatreTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TheatreTest_sellOutPerformancePossible - 2018.07.13 at 19h 58m 16s.xml">
+      <configuration name="TheatreTest.sellOutPerformancePossible" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TheatreTest_sellOutPerformancePossible - 2018.07.13 at 19h 59m 13s.xml">
+      <configuration name="TheatreTest.sellOutPerformancePossible" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="716" extended-state="0" />
@@ -441,7 +439,7 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32956383" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32956383" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" weight="0.32956383" />
       <window_info id="Capture Tool" />
@@ -451,7 +449,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
       <window_info anchor="right" id="Theme Preview" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3990307" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990307" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -685,8 +683,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Theatre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="148" column="8" selection-start-line="148" selection-start-column="8" selection-end-line="151" selection-end-column="9" />
+        <state relative-caret-position="175">
+          <caret line="156" column="5" lean-forward="true" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#485#486#0" expanded="true" />
@@ -739,20 +737,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/db/DBTheatre.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/TheatreTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        <state relative-caret-position="-327">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TheatreTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/db/DBTheatre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="59" column="17" lean-forward="true" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+        <state relative-caret-position="170">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -761,8 +759,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="200">
+          <caret line="68" column="72" selection-start-line="68" selection-start-column="72" selection-end-line="68" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
