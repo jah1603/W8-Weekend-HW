@@ -19,6 +19,7 @@
         <mapping class = "models.Play"/>
         <mapping class = "models.Character"/>
         <mapping class = "models.Critique"/>
+        <mapping class = "models.Actor"/>
 
     </session-factory>
 </hibernate-configuration>

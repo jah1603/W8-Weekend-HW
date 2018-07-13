@@ -20,6 +20,7 @@ public class Theatre {
         this.name = name;
         this.city = city;
         this.capacity = capacity;
+        this.performances = new ArrayList<Play>();
     }
 
     public Theatre(){}
@@ -73,5 +74,9 @@ public class Theatre {
 
     public void setPerformances(List<Play> performances) {
         this.performances = performances;
+    }
+
+    public void addPlayToPerformanceList(Play play){
+        this.performances.add(play);
     }
 }

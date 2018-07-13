@@ -3,28 +3,30 @@ package models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "characters")
-public class Character {
+@Table(name = "actors")
+public class Actor {
 
     private int id;
     private String name;
     private Play play;
-    private Actor actor;
+    private Character character;
 
-    public Character(String name, Play play){
+    public Actor(String name, Play play, Character character){
         this.name = name;
         this.play = play;
+        this.character = character;
     }
 
-    public Character(){}
+    public Actor(){}
 
-    @OneToOne(mappedBy = "character", fetch = FetchType.LAZY)
-    public Actor getActor() {
-        return actor;
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "character_id", nullable = false)
+    public Character getCharacter() {
+        return character;
     }
 
-    public void setActor(Actor actor) {
-        this.actor = actor;
+    public void setCharacter(Character character) {
+        this.character = character;
     }
 
     @Id
